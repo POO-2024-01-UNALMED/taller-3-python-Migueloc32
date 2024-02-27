@@ -2,44 +2,44 @@ class Control:
   def __init__(self):
       self._tv = None
 
-  def canal_up(self):
+  def canalUp(self):
       if self._tv:
-          self._tv.set_canal(self._tv.get_canal() + 1)
+          self._tv.setCanal(self._tv.getCanal() + 1)
 
-  def canal_down(self):
+  def canalDown(self):
       if self._tv:
-          self._tv.set_canal(self._tv.get_canal() - 1)
+          self._tv.setCanal(self._tv.getCanal() - 1)
 
-  def volumen_up(self):
+  def volumenUp(self):
       if self._tv:
-          self._tv.set_volumen(self._tv.get_volumen() + 1)
+          self._tv.setVolumen(self._tv.getVolumen() + 1)
 
-  def volumen_down(self):
+  def volumenDown(self):
       if self._tv:
-          self._tv.set_volumen(self._tv.get_volumen() - 1)
+          self._tv.setVolumen(self._tv.getVolumen() - 1)
 
   def enlazar(self, tv):
       self._tv = tv
-      tv.set_control(self)
+      tv.setControl(self)
 
-  def turn_on(self):
+  def turnOn(self):
       if self._tv:
-          self._tv.turn_on()
+          self._tv.turnOn()
 
-  def turn_off(self):
+  def turnOff(self):
       if self._tv:
-          self._tv.turn_off()
+          self._tv.turnOff()
 
-  def set_canal(self, canal):
+  def setCanal(self, canal):
       if self._tv:
-          self._tv.set_canal(canal)
+          self._tv.setCanal(canal)
 
-  def set_volumen(self, volumen):
+  def setVolumen(self, volumen):
       if self._tv:
-          self._tv.set_volumen(volumen)
+          self._tv.setVolumen(volumen)
 
-  def get_tv(self):
+  def getTv(self):
       return self._tv
 
-  def set_tv(self, tv):
+  def setTv(self, tv):
       self._tv = tv

@@ -10,63 +10,63 @@ class TV:
           self._control = None
           TV._num_tv += 1  
 
-      def turn_on(self):
+      def turnOn(self):
           self._estado = True
 
-      def turn_off(self):
+      def turnOff(self):
           self._estado = False
 
-      def get_estado(self):
+      def getEstado(self):
           return self._estado
 
-      def set_canal(self, canal):
+      def setCanal(self, canal):
           if self.get_estado() and 1 <= canal <= 120:
               self._canal = canal
 
-      def get_canal(self):
+      def getCanal(self):
           return self._canal
 
-      def canal_up(self):
-          self.set_canal(self.get_canal() + 1)
+      def canalUp(self):
+          self.setCanal(self.getCanal() + 1)
 
-      def canal_down(self):
-          self.set_canal(self.get_canal() - 1)
+      def canalDown(self):
+          self.setCanal(self.getCanal() - 1)
 
-      def set_volumen(self, volumen):
-          if 0 <= volumen <= 7 and self.get_estado():
+      def setVolumen(self, volumen):
+          if 0 <= volumen <= 7 and self.getEstado():
               self._volumen = volumen
 
-      def get_volumen(self):
+      def getVolumen(self):
           return self._volumen
 
-      def volumen_up(self):
-          self.set_volumen(self.get_volumen() + 1)
+      def volumenUp(self):
+          self.setVolumen(self.getVolumen() + 1)
 
-      def volumen_down(self):
-          self.set_volumen(self.get_volumen() - 1)
+      def volumenDown(self):
+          self.setVolumen(self.getVolumen() - 1)
 
-      def set_control(self, control):
+      def setControl(self, control):
           self._control = control
 
-      def get_control(self):
+      def getControl(self):
           return self._control
 
-      def set_marca(self, marca):
+      def setMarca(self, marca):
           self._marca = marca
 
-      def get_marca(self):
+      def getMarca(self):
           return self._marca
 
-      def set_precio(self, precio):
+      def setPrecio(self, precio):
           self._precio = precio
 
-      def get_precio(self):
+      def getPrecio(self):
           return self._precio
 
-     
-      def get_num_tv(cls):
-          return cls._num_tv
+      
+      def getNumTv(cls):
+          return cls._numTv
 
       
-      def set_num_tv(cls, num_tv):
-          cls._num_tv = num_tv
+      def setNumTv(cls, numTv):
+          cls._numTv = numTv
