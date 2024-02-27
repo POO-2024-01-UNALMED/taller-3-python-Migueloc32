@@ -10,6 +10,9 @@ class TV:
           self._control = None
           TV._numTv += 1  
 
+    
+    
+
       def turnOn(self):
           self._estado = True
 
@@ -64,9 +67,10 @@ class TV:
           return self._precio
 
       
-      def getNumTv(cls):
+      def getNumTV(cls):
           return cls._numTv
 
       
-      def setNumTv(cls, numTv):
+      def setNumTV(cls, numTv):
           cls._numTv = numTv
+    
