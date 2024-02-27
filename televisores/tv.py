@@ -67,10 +67,10 @@ class TV:
           return self._precio
 
       
-      def getNumTV(cls):
-          return cls._numTv
+      def getNumTV(self):
+          return self._numTv
 
       
-      def setNumTV(cls, numTv):
-          cls._numTv = numTv
+      def setNumTV(self, numTv):
+          self._numTv = numTv
     
