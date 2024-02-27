@@ -66,11 +66,11 @@ class TV:
       def getPrecio(self):
           return self._precio
 
-      
-      def getNumTV(self):
-          return self._numTv
+      @classmethod
+      def getNumTV(cls):
+          return cls_numTv
 
-      
-      def setNumTV(self, numTv):
-          self._numTv = numTv
+      @classmethod
+      def setNumTV(cls, numTv):
+          cls_numTv = numTv
     
